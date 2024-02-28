@@ -1,0 +1,32 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    padding: 1.5rem;
+    margin: auto;
+    transform: translate(0, 50%);
+    border-radius: 20px;
+}
+
+.login h1{
+    font-size: 30px;
+}
+
+.login input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.acessar {
+    cursor: pointer;
+}
+
+.acessar:hover {
+    background-color: red;
+}
