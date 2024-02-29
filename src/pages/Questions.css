@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 550px ) {
-    .perguntas {
+    .perguntas, .quadro-perguntas button {
         height: 100px;
     }
 }
