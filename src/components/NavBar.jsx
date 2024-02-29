@@ -9,8 +9,8 @@ const NavBar = () => {
     
     return (
         
-        <nav>
-            <p>Nome:{name}</p>
+        <nav className="navbar">
+            <p>Nome: {name}</p>
         </nav>
     )
 }

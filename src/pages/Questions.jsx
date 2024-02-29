@@ -10,9 +10,9 @@ const Questions = () => {
 
     const {acertos, handleSetacertos} = useContext(UserNameContext)
     const Navigate = useNavigate()
-
     const [data, setData] = useState();
     const [perguntaNumero, setPerguntaNumero] = useState(0)
+
     function embaralharArray() {
         let arr = [1,2,3]
         for (let i = arr.length - 1; i > 0; i--) {
@@ -21,6 +21,7 @@ const Questions = () => {
         }
         return arr;
     }
+
     function handleNext(certa) {
         if(perguntaNumero < 4) {
             setPerguntaNumero((prev) => prev + 1)
@@ -33,6 +34,7 @@ const Questions = () => {
             Navigate('/score')
         }
     }
+
     const order = embaralharArray()
     useEffect(() => {
         axios.get('https://be-teste-tec-b5dc1a90bbd0.herokuapp.com/api/atividades/list')
@@ -41,15 +43,15 @@ const Questions = () => {
 
 
     return (
-        <div>
+        <section>
             <NavBar/>
             <div className="quadro-perguntas">
                 <p className="perguntas">{data?.data[perguntaNumero]?.pergunta}</p>
-                <button onClick={() => handleNext(true)} style={{order: order[0]}}>{data?.data[perguntaNumero]?.resposta_correta}</button>
+                <button onClick={() => handleNext(true)} style={{order: order[0]}}>{data?.data[perguntaNumero]?.resposta_correta}ok</button>
                 <button onClick={() => handleNext(false)} style={{order: order[1]}}>{data?.data[perguntaNumero]?.resposta_errada1}</button>
                 <button onClick={() => handleNext(false)} style={{order: order[2]}}>{data?.data[perguntaNumero]?.resposta_errada2}</button>
             </div>
-        </div>
+        </section>
     )
 }
 

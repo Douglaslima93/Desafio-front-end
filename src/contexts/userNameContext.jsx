@@ -6,6 +6,7 @@ export const UserNameContext = createContext({});
 export function UserNameProvider({children}) {
     const [name, setName] = useState('')
     const [acertos, setAcertos] = useState(0)
+    //const [erros, setErros] = useState()
 
     function handleSetname(name) {
         setName(name)

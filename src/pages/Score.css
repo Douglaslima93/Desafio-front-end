@@ -1,0 +1,39 @@
+.score {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        width: 50%;
+        max-width: 1250px;
+        height: 300px;
+        background-color: gray;
+        padding: 1.5rem;
+        margin: auto;
+        transform: translate(0, 50%);
+        border-radius: 20px;
+}
+
+.score h1 {
+    text-align: center;
+}
+
+.card-score {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-score p {
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: 600;
+}

@@ -4,15 +4,8 @@ import { Link } from "react-router-dom";
 import { UserNameContext } from "../contexts/userNameContext";
 
 const Login = () => {
-    /*const [nomeUsuario, setNomeUsuario] = useState('');
-    const handleChange = (event) => {
-        setNomeUsuario(event.target.value);
-        
-    };*/
 
     const {name,handleSetname} = useContext(UserNameContext)
-
-  
     return (
         <div className="login">
         <h1>Nome</h1>
