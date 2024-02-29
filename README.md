@@ -18,8 +18,8 @@
 
 ### - Digite h + enter em seguida o + enter, o deploy irá abrir.
 
-### - ![alt text](../imagem1.png)
-### - ![alt text](../imagem2.png)
-### - ![alt text](../imagem3.png)
+### - ![alt text](public/imagem1.png)
+### - ![alt text](public/imagem2.png)
+### - ![alt text](public/imagem3.png)
 
 
