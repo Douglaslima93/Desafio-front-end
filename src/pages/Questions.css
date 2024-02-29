@@ -1,21 +1,26 @@
+.secao-perguntas {
+    width: 100%; 
+}
+
+.quadro {
+    transform: translate(0, 60%);
+    margin: -50px 20px 50px 20px;
+}
+
 .quadro-perguntas {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
-    width: 50%;
-    max-width: 1250px;
-    height: 300px;
     background-color: gray;
-    padding: 1.5rem;
-    margin: auto;
-    transform: translate(0, 50%);
+    padding: 20px;
     border-radius: 20px;
 }
 
 .perguntas {
     width: 100%;
-    height: 3.5rem;
+    height: 60px;
     border-radius: 30px;
     text-align: center;
     font-size: 18px;
@@ -24,11 +29,13 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
 }
 
 .quadro-perguntas button {
     width: 100%;
-    height: 3.5rem;
+    height: 60px;
     border-radius: 30px;
     text-align: center;
     font-size: 18px;
@@ -36,7 +43,19 @@
 }
 
 .quadro-perguntas button:hover{
-    background-color: red;
+    background-color: rgb(55, 51, 51);
+    color: #fff;
     cursor: pointer;
 }
 
+@media screen and (max-width: 350px ) {
+    .perguntas, .quadro-perguntas button {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 550px ) {
+    .perguntas {
+        height: 100px;
+    }
+}

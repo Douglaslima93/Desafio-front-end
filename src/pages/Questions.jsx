@@ -43,13 +43,15 @@ const Questions = () => {
 
 
     return (
-        <section>
+        <section className="secao-perguntas">
             <NavBar/>
+            <div className="quadro">
             <div className="quadro-perguntas">
                 <p className="perguntas">{data?.data[perguntaNumero]?.pergunta}</p>
-                <button onClick={() => handleNext(true)} style={{order: order[0]}}>{data?.data[perguntaNumero]?.resposta_correta}ok</button>
+                <button onClick={() => handleNext(true)} style={{order: order[0]}}>{data?.data[perguntaNumero]?.resposta_correta}</button>
                 <button onClick={() => handleNext(false)} style={{order: order[1]}}>{data?.data[perguntaNumero]?.resposta_errada1}</button>
                 <button onClick={() => handleNext(false)} style={{order: order[2]}}>{data?.data[perguntaNumero]?.resposta_errada2}</button>
+            </div>
             </div>
         </section>
     )
